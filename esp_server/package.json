@@ -1,0 +1,14 @@
+{
+  "name": "esp_server",
+  "version": "1.0.0",
+  "description": "server to recieve image buffers from the esp32s3 gecki cam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
