@@ -10,17 +10,6 @@
 /**
  * @brief handling image capture
 */
-UBaseType_t uxHighWaterMark;
-int pSize = 0;
-
-size_t jpg_cb(void * arg, size_t index, const void * data, size_t len) {
-    esp_http_client_handle_t * client = (esp_http_client_handle_t*)arg;
-    int write_len = esp_http_client_write(*client, (const char *)data, len);
-    pSize = pSize + write_len;
-    printf("total sent: %u", pSize); 
-    return write_len >= 0 ? write_len : 0;  // if write_len is negative, return 0
-}
-
 void cameraSetup(){
   
   static camera_config_t config;
