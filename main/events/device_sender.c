@@ -10,8 +10,9 @@
 #include "esp_camera.h"
 
 // client config for client init
+// Use your local server/ post endpoint
 esp_http_client_config_t client_config = {
-  .url = "http://10.0.0.109:3500/upload",  
+  .url = "your local endpoint here...",  
   .method = HTTP_METHOD_POST,
   .timeout_ms = 10000,  // timeout in milliseconds
 };
